@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/*
+    Здесь импортируются все CSS библиотеки
+    Можно импортить как CSS так и SASS файлы
+    Если CSS то расширение указывать не надо
+    */
+
+@import url(../libs/bootstrap-4.1.3/css/bootstrap-grid.css);
+
+@import url(../libs/bootstrap-4.1.3/css/bootstrap.min.css);
+
+@import url(../libs/bootstrap-4.1.3/css/bootstrap-reboot.min.css);
+
+@import url(../libs/font-awesome-4.7.0/css/font-awesome.min.css);
