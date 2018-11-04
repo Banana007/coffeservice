@@ -4,22 +4,326 @@
 @import "vars"
 @import "fonts"
 
+
 html
     scroll-behavior: smooth
-    
 
 body
-    font-family: $neosans
     overflow-x: hidden
+    font-family: $arial
     font-weight: 400
+    margin: 0
+    padding: 0
 
 a
-    color: #1B1414
+    color: #fff
     transition: all .2s ease
+
+ul
+    list-style-type: none
+    padding: 0
+    margin: 0
 
 a:hover
     color: #000000
     text-decoration: none
+
+
+
+// TOP BEGIN
+.section1
+    width: 100%
+    height: 40px
+    background-color: $blue
+    .header
+        &-brand
+            text-transform: uppercase
+            color: #fff
+            font-style: italic
+            font-weight: bold
+            font-size: 16px
+        .hamburger
+            font-size: 20px
+            color: #fff
+.bar
+    position: absolute
+    content: ""
+    z-index: 10
+    background-color: $blue
+    width: 180px
+    height: 100%
+    right: -130px
+    top: 40px
+    transition: all .1s ease
+    visibility: hidden
+    opacity: 0
+    &-soc
+        color: #fff
+        font-style: italic
+        margin: 0
+        padding-left: 26px
+        margin-top: 16px
+    .menu
+        padding-top: 20px
+        padding-left: 26px
+        &-item
+            &-service
+            &-coffe
+            &-sport
+            &-contacts
+            &-about
+            &-faq
+            a
+                font-style: italic
+                color: #fff
+                font-weight: bold
+                display: block
+                &:hover
+                    color: #000
+                    padding-left: 4px
+    .menu1::before
+        content: ""
+        position: absolute
+        top: 10px
+        width: 40px
+        height: 1px
+        background-color: #fff
+    .menu1::after
+        content: ""
+        position: absolute
+        top: 100px
+        width: 40px
+        height: 1px
+        background-color: #fff
+    .menu2::before
+        content: ""
+        position: absolute
+        top: 190px
+        width: 40px
+        height: 1px
+        background-color: #fff
+    .menu3
+        padding-top: 2px
+        &-link
+            width: 24px
+            height: 24px
+            display: inline-block
+            border-radius: 50%
+            margin: 0 2px 0 2px
+            text-align: center
+            .fa
+                position: relative
+                right: 0px
+        &-link:nth-child(1)
+            color: $vk
+            background-color: #fff
+            &:hover
+                color: #fff
+                background-color: $blue
+        &-link:nth-child(2)
+            color: $fb
+            background-color: #fff
+            &:hover
+                color: #fff
+                background-color: $blue
+        &-link:nth-child(3)
+            color: $youb
+            background-color: #fff
+            &:hover
+                color: #fff
+                background-color: $blue
+        &-link:nth-child(4)
+            color: $insta
+            background-color: #fff
+            &:hover
+                color: #fff
+                background-color: $blue
+    .menu3::before
+        content: ""
+        position: absolute
+        top: 270px
+        width: 40px
+        height: 1px
+        background-color: #fff
+.active
+    display: block
+    right: 0
+    visibility: visible
+    opacity: 1
+// TOP END
+
+
+
+// SERVICE BEGIN
+.sectionService
+    position: relative
+    width: 100%
+    min-height: 600px
+    background: url("https://images.pexels.com/photos/175039/pexels-photo-175039.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") no-repeat center center fixed
+    background-size: cover
+    &-title
+        color: #000
+        position: relative
+        font-size: 2em
+        font-style: italic
+        background-color: #fff
+        text-align: center
+        &::before
+            content: "\f0ad"
+            position: absolute
+            font-family: "FontAwesome"
+            font-style: normal
+            width: 100%
+            top: 0
+            right: 0
+            left: 100px
+            bottom: 0
+        &::after
+            content: "\f0ad"
+            position: absolute
+            font-family: "FontAwesome"
+            font-style: normal
+            width: 100%
+            top: 0
+            right: 0
+            left: -100px
+            bottom: 0
+    &::before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 100%
+        min-height: 600px
+        background-color: #000
+        opacity: .6
+    .service__left
+        background-color:
+        &-descr
+            color: #fff
+            position: relative
+            font-style: italic
+            font-weight: 300
+            text-align: justify
+            padding-bottom: 6px
+            border-bottom: 1px solid #fff
+    .service__right
+        color: #fff
+        position: relative
+        &-title
+            font-size: 2em
+        .serviceList
+            &-item
+                font-size: 1.4em
+                a
+                    border-bottom: 1px solid #fff
+                    &:hover
+                        color: #e6e6e6
+                        padding-left: 4px
+// SERVICE END
+
+
+
+// SPORT BEGIN
+.sectionSport
+    width: 100%
+    min-height: 600px
+    background: url("https://images.pexels.com/photos/804567/pexels-photo-804567.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") no-repeat center center fixed
+    background-size: cover
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 100%
+        min-height: 600px
+        background-color: #000
+        opacity: .6
+    &-title
+        color: #000
+        position: relative
+        font-size: 2em
+        font-style: italic
+        background-color: #fff
+        text-align: center
+        &::before
+            content: "\f206"
+            position: absolute
+            font-family: "FontAwesome"
+            font-style: normal
+            width: 100%
+            top: 0
+            right: 0
+            left: 100px
+            bottom: 0
+        &::after
+            content: "\f236"
+            position: absolute
+            font-family: "FontAwesome"
+            font-style: normal
+            width: 100%
+            top: 0
+            right: 0
+            left: -100px
+            bottom: 0
+    &-descr
+        color: #fff
+        position: relative
+        font-style: italic
+        font-weight: 300
+// SPORT END
+
+
+
+// FOOTER BEGIN
+.footer
+    position: relative
+    background-color: $blue
+    height: 54px
+    width: 100%
+    .footer__bottom
+        &-title
+            margin: 0
+            padding: 0
+            color: #fff
+            letter-spacing: 2px
+            font-style: italic
+            font-weight: 100
+        &-link
+            width: 24px
+            height: 24px
+            display: inline-block
+            border-radius: 50%
+            margin: 0 12px 0 12px
+        &-link:nth-child(2)
+            color: $vk
+            background-color: #fff
+            &:hover
+                color: #fff
+                background-color: $blue
+        &-link:nth-child(3)
+            color: $fb
+            background-color: #fff
+            &:hover
+                color: #fff
+                background-color: $blue
+        &-link:nth-child(4)
+            color: $youb
+            background-color: #fff
+            &:hover
+                color: #fff
+                background-color: $blue
+        &-link:nth-child(5)
+            color: $insta
+            background-color: #fff
+            &:hover
+                color: #fff
+                background-color: $blue
+            .fa
+                position: relative
+                right: 1px
+// FOOTER END
+
+        
 
 
 @import "media"

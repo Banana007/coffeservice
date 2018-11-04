@@ -38,7 +38,6 @@ gulp.task('scripts', function () {
         'app/libs/jquery-3.3.1/jquery.min.js',
         'app/libs/mypopper.js',
         'app/libs/bootstrap-4.1.3/js/bootstrap.min.js',
-        'app/libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js'
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
