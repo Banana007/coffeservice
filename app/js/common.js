@@ -1,30 +1,41 @@
-var burger = document.querySelector(".burger");
-var hamburger = document.querySelector(".hamburger");
-var bar = document.querySelector(".bar");
-var bd = document.body;
+var arr = ["Moscow-0", "China-1", "Japane-2", "USA-3", "India-4"];
+// console.log(arr);
 
-var counter = 0;
+// arr.splice(1,3); // delete from 1 to 3
+// console.log(arr);
 
-/* 
-    if hamburger is active then overflowY = hidden
-    if hamburger isn't active then overflowY = scroll
-*/
-burger.addEventListener("click", function () {
-    
-    var bar = document.querySelector(".bar");
-    var hamburger = document.querySelector(".hamburger");
-    hamburger.classList.toggle("fa-bars");
-    hamburger.classList.toggle("fa-times");
+// var newArr = [1,2,3,4,5];
+// str = "aaaa"
 
-    counter++;
-    bar.classList.toggle("active");
+// arr.splice(0, 0, str); // add to begin 
+// console.log(arr);
 
-    if(counter%2 === 1) {
-        document.body.style.overflowY = "hidden";
-    }else{
-        document.body.style.overflowY = "scroll";
-    }
-    
+
+// arr.splice(1, 2, "aaa","bbb");
+// console.log(arr);
+
+
+// arr.splice(1,1); // удалить первый
+// console.log(arr);
+
+var numbers = [ 1, 4, 6, 12, 34, 46, 76, 99];
+
+// let num2 = numbers.map(function(item){
+//     return item + "ss";
+// });
+
+let num2 = numbers.every(function (item) {
+    return item > 0;
 });
+
+let num3 = numbers.some(function(item){
+    return item > 2;
+});
+
+var myobj = {
+    name: "alex",
+    age: 21
+};
+
 
 
