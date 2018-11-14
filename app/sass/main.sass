@@ -403,10 +403,38 @@ a:hover
         color: #000000
         font-size: 24px
         padding-bottom: 2px
-// arrowUp END
 
-// arrow BEGIN
-// arrow END
+.pulse
+  border-radius: 50%
+  cursor: pointer
+  box-shadow: 0 0 0 #666666
+  animation: pulse 2s infinite
+  &:hover
+
+@-webkit-keyframes pulse
+  0%
+    -webkit-box-shadow: 0 0 0 0 #666666
+
+  70%
+    -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0)
+
+  100%
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0)
+
+
+@keyframes pulse
+  0%
+    -moz-box-shadow: 0 0 0 0  #666666
+    box-shadow: 0 0 0 0  #666666
+
+  70%
+    -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0)
+    box-shadow: 0 0 0 10px rgba(204, 169, 44, 0)
+
+  100%
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0)
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0)
+// arrowUp END
 
         
 
